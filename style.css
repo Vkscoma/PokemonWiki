@@ -147,6 +147,13 @@ tbody>tr:nth-child(3):hover {
 
     .container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-left: 0 !important;
+    }
+
+    .table {
+        display: grid;
+        place-content: center;
     }
 }
