@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <!--Font Awesomne-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <h1>Pokemon Details</h1>
+    </header>
+    <aside>
+        <h2>Pokemon List</h2>
+        <ul id="pokemon-list">
+        </ul>
+    </aside>
+    <div class="container">
+        <article class="card" id="pokemon-sprite"></article>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col" id="pokemon-name"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Type</td>
+                    <td id="pokemon-type">Cell</td>
+                </tr>
+                <tr>
+                    <td>HP</td>
+                    <td id="pokemon-hp">Cell</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td id="pokemon-description">Cell</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

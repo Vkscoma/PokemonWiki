@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    background-color: #3B4CCA;
+    transition: all 0.5s ease;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+aside h2 {
+    font-family: 'Press Start 2P';
+    color: #f5f5f5;
+    text-align: center;
+}
+
+
+aside ul {
+    color: #fff;
+    overflow-x: hidden;
+}
+
+aside li {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+aside li:hover {
+    background-color: #fff;
+    color: #3B4CCA;
+}
+
+h1 {
+    font-family: 'Press Start 2P' !important;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-left: 200px !important;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 350px;
+    margin: 2em;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+
+img {
+    width: 200px;
+    height: 200px !important;
+    transition: all 0.5s ease;
+}
+
+tbody>tr:nth-child(1):hover {
+    background-color: #f5f5f5;
+}
+
+tbody>tr:nth-child(2):hover {
+    background-color: #f5f5f5;
+}
+
+tbody>tr:nth-child(3):hover {
+    background-color: #f5f5f5;
+}
+
+.btn {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    background-color: #e4000f;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #3B4CCA;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        max-width: 80%;
+        transform: translateX(-100%);
+    }
+
+    .show-aside {
+        transform: translateX(0);
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 2rem;
+        margin: 1rem;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-left: 0 !important;
+    }
+}
