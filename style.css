@@ -13,6 +13,7 @@ body {
 
 header {
     background-color: #e4000f;
+    margin-bottom: 1.5em;
 }
 
 .hamburger-menu {
@@ -60,7 +61,7 @@ h1 {
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    margin: 1rem 0;
+    margin: 0;
     color: #fff !important;
 }
 
