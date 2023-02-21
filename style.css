@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    padding-left: 300px;
 }
 
 header {
@@ -68,7 +69,8 @@ h1 {
 .container {
     display: flex;
     justify-content: center;
-    padding-left: 200px !important;
+    padding-left: 100px !important;
+    margin-top: 2em;
 }
 
 .card {
