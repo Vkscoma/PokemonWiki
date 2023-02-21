@@ -12,6 +12,12 @@ body {
     padding-left: 300px;
 }
 
+@media screen and (max-width: 768px){
+  body {
+    padding-left: 0;
+  }
+}
+
 header {
     background-color: #e4000f;
     margin-bottom: 1.5em;
@@ -69,7 +75,6 @@ h1 {
 .container {
     display: flex;
     justify-content: center;
-    padding-left: 100px !important;
     margin-top: 2em;
 }
 
