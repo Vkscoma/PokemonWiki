@@ -43,6 +43,8 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=151`)
 
         menuIcon.addEventListener('click', () => {
             const aside = document.querySelector('aside')
+            const body = document.querySelector('body')
             aside.classList.toggle('show-aside')
+            body.classList.toggle('overflow-hidden')
         })
     })
